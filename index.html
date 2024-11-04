@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>온라인 서식 모듈화 하기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <table class="table-type1">
+    <caption>제품검색</caption>
+    <colgroup>
+      <col style="width: 177px;">
+      <col>
+    </colgroup>
+
+    <tbody>
+      <tr>
+        <th>분류</th>
+        <td>
+          <ul>
+            <li><input type="checkbox" id="chk1_1"><label for="chk1_1">기념품</label></li>
+            <li><input type="checkbox" id="chk1_2"><label for="chk1_2">도서</label></li>
+            <li><input type="checkbox" id="chk1_3"><label for="chk1_3">배지</label></li>
+            <li><input type="checkbox" id="chk1_4"><label for="chk1_4">복식</label></li>
+            <li><input type="checkbox" id="chk1_5"><label for="chk1_5">시상품</label></li>
+            <li><input type="checkbox" id="chk1_6" checked><label for="chk1_6">증명서</label></li>
+            <li><input type="checkbox" id="chk1_7"><label for="chk1_7">페넌트</label></li>
+            <li><input type="checkbox" id="chk1_8"><label for="chk1_8">포스터</label></li>
+            <li><input type="checkbox" id="chk1_9"><label for="chk1_9">기타</label></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th><label for="text1_1">자료명</label></th>
+        <td><input type="text" id="text1_1"></td>
+      </tr>
+      <tr>
+        <th><label for="text1_2">소장품번호</label></th>
+        <td><input type="number" id="text1_2"></td>
+      </tr>
+      <tr>
+        <th>국적-시대</th><!-- label이 여러개일때는 for가 아닌 title속성을 준다 -->
+        <td>
+          <select title="국적">
+            <option value="">선택</option>
+          </select>
+          <select title="시대">
+            <option value="">선택</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th><label for="text1_3">년대</label></th>
+        <td><input type="number" id="text1_3">YYYY</td>
+      </tr>
+      <tr>
+        <th><label for="text1_4">입수처&기증자</label></th>
+        <td>
+          <input type="text" id="text1_4">
+        </td>
+      </tr>
+      <tr>
+        <th>공공누리</th>
+        <td>
+          <ul>
+            <li><input type="checkbox" id="chk2_1"><label for="chk2_1">제1유형</label></li>
+            <li><input type="checkbox" id="chk2_2" checked><label for="chk2_2">제2유형</label></li>
+            <li><input type="checkbox" id="chk2_3"><label for="chk2_3">제3유형</label></li>
+            <li><input type="checkbox" id="chk2_4"><label for="chk2_4">제4유형</label></li>
+            <li><input type="checkbox" id="chk2_5"><label for="chk2_5">적용안함</label></li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div>
+    <button type="button" class="btn-wihte">초기화</button>
+    <button type="button" class="btn-black">검색</button>
+  </div>
+</body>
+
+</html>
